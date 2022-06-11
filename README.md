@@ -1,3 +1,3 @@
 # ODA
 
-Repositório destinado aos Objetos Digitais de Aprendizado do curso de formação acelerada em programação Softex.
+Repositório destinado aos Objetos Digitais de Aprendizado do curso FAP(formação acelerada em programação) da SoftexRecife.
