@@ -1,3 +1,5 @@
+Projeto 02
+
 Como o professor tem dificuldade de memorizar, ele precisou estabelecer um padrão.
 Observa-se na ilustração 02 que o padrão definido pelo professor foi de grupos de 4 alunos.
 Há 36 alunos na sala, portanto foram formados 9 grupos divididos em 3 tipos:
