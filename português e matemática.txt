@@ -1,0 +1,10 @@
+Como o professor tem dificuldade de memorizar, ele precisou estabelecer um padrão.
+Observa-se na ilustração 02 que o padrão definido pelo professor foi de grupos de 4 alunos.
+Há 36 alunos na sala, portanto foram formados 9 grupos divididos em 3 tipos:
+	- 3 alunos que preferem português e 1 que prefere matemática
+	- 3 alunos que preferem matemática e 1 que prefere português 
+	- 2 alunos que preferem matemática e 2 que preferem português
+Em cada coluna e linha há 3 grupos de cada um dos tipos.
+Ao voltar para sala o professor percebeu que na terceira linha/terceira coluna havia 2 grupos divididos da mesma maneira.
+Após essa realização, levando em conta o padrão que usou para dividir os alunos, ele notou que um deles havia mudado de lugar.
+Ele soube da cadeira específica pois o aluno que estava sentado quebrava o padrão estabelecido por ele tanto em linha como em coluna.
