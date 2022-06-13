@@ -1,0 +1,18 @@
+Projeto 03
+
+
+algoritmo "armazenamento de dados"
+
+var
+	caractere: Nome, Endereco
+	inteiro: CPF, RG
+	real: Altura
+
+inicio
+	Nome <- "José Almeida da Silva"
+	CPF <- 12345678900
+	RG <- 9517530
+	Altura <- 1,78
+	Endereco <- "Rua A, 380 – Centro – Recife/PE"
+
+fimalgoritmo
