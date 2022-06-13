@@ -1,0 +1,49 @@
+Projeto 04
+
+
+algoritmo "cadastro"
+
+var
+	caractere: nome, endereco, cidade, nomeDoPai, nomeDaMae
+	inteiro: CPF, RG, idade
+	real: peso, rendaBruta
+
+inicio
+	// Bloco de entrada de dados
+	escreva("Vamos dar início ao seu cadastro!")
+	escreva("Qual o seu nome? ")
+	leia(nome)
+	escreva("Informe seu endereço: ")
+	leia(endereco)
+	escreva("Em que cidade você mora? ")
+	leia(cidade)
+	escreva("Insira seu CPF(só números): ")
+	leia(CPF)
+	escreva("Insira seu RG(só números): ")
+	leia(RG)
+	escreva("Quantos anos você tem? ")
+	leia(idade)
+	escreva("Qual o nome do seu pai? ")
+	leia(nomeDoPai)
+	escreva("Qual o nome da sua mãe? ")
+	leia(nomeDaMae)
+	escreva("Quanto você pesa atualmente? ")
+	leia(peso)
+	escreva("Qual valor atual da sua renda bruta? ")
+	leia(rendaBruta)
+	escreva("Seu cadastro foi concluído!")
+
+	// Bloco de exibição dos dados informados
+	escreva("Estes foram os dados informados por você durante o cadastro:")
+	escreva("Nome: ", nome)
+	escreva("Endereço: ", endereco)
+	escreva("Cidade: ", cidade)
+	escreva("CPF: ", CPF)
+	escreva("RG: ", RG)
+	escreva("Idade: ", idade)
+	escreva("Nome do pai: ", nomeDoPai)
+	escreva("Nome da mãe: ", nomeDaMae)
+	escreva("Peso: ", peso)
+	escreva("Renda bruta: ", rendaBruta)
+
+fimalgoritmo
