@@ -1,0 +1,147 @@
+Projeto 05
+
+
+algoritmo "Meio de transporte"
+
+var
+	caractere: tipo, umaPessoa, pesado, mercadoria, publico, rodas, sob, vela, cruzeiro, asas, helice, ar
+
+inicio
+	escreva("Selecione mentalmente um dos seguintes:\n",
+		"- Trator\n",
+		"- Moto\n",
+		"- Bicicleta\n",
+		"- Trem\n",
+		"- Carro\n",
+		"- Caminhão\n",
+		"- Ônibus\n",
+		"- Paraquedas\n",
+		"- Balão\n",
+		"- Avião\n",
+		"- Helicóptero\n",
+		"- Submarino\n",
+		"- Barco\n",
+		"- Navio\n",
+		"- Lancha\n")
+
+	escreva("Esse meio de transporte é terreste? ")
+	escreva("Responda com Sim ou Não")
+	leia(tipo)
+	se (tipo = Sim) então
+		escreva("Cabe apenas uma pessoa? ")
+		escreva("Responda com Sim ou Não")
+		leia(umaPessoa)
+		escreva("É pesado? ")
+		escreva("Responda com Sim ou Não")
+		leia(pesado)
+		escreva("É usado para transportar mercadorias? ")
+		escreva("Responda com Sim ou Não")
+		leia(mercadoria)
+		escreva("É público? ")
+		escreva("Responda com Sim ou Não")
+		leia(publico)
+		escreva("Tem duas rodas? ")
+		escreva("Responda com Sim ou Não")
+		leia(rodas)
+		se ((umaPessoa = "Sim") e (pesado = "Sim") e (mercadoria = Não) e (publico = Não) e (rodas = Não)) então
+			escreva("Então, o transporte escolhido foi o Trator")
+		senão
+			se ((umaPessoa = "Sim") e (pesado = "Não") e (mercadoria = Não) e (publico = Não) e (rodas = Sim)) então
+				escreva("Então, o transporte escolhido foi a Bicicleta.")
+			senão
+				se ((umaPessoa = "Não") e (pesado = "Sim") e (mercadoria = Não) e (publico = Não) e (rodas = Sim)) então
+					escreva("Então, o transporte escolhido foi a Moto")
+				senão
+					se ((umaPessoa = "Não") e (pesado = "Sim") e (mercadoria = Não) e (publico = Não) e (rodas = Não)) então
+						escreva("Então, o transporte escolhido foi o Carro")
+					senão
+						se ((umaPessoa = "Não") e (pesado = "Sim") e (mercadoria = Sim) e (publico = Não) e (rodas = Não)) então
+							escreva("Então, o transporte escolhido foi o Caminhão")
+						senão
+							se ((umaPessoa = "Não") e (pesado = "Sim") e (mercadoria = Sim) e (publico = Sim) e (rodas = Não)) então
+								escreva("Então, o transporte escolhido foi o Trem")
+							senão
+								se ((umaPessoa = "Não") e (pesado = "Sim") e (mercadoria = Não) e (publico = Sim) e (rodas = Não)) então
+									escreva("Então, o transporte escolhido foi o Ônibus")
+								senão
+									escreva("Escolha um meio de transporte contido na lista.")
+								fimse
+							fimse
+						fimse
+					fimse
+				fimse
+			fimse
+		fimse
+		
+	senão
+		escreva("Esse meio de transporte é aéreo? ")
+		escreva("Responda com Sim ou Não")
+		leia(tipo)
+		se (tipo = Sim) então
+			escreva("Cabe apenas uma pessoa? ")
+			escreva("Responda com Sim ou Não")
+			leia(umaPessoa)
+			escreva("Tem asas? ")
+			escreva("Responda com Sim ou Não")
+			leia(asas)
+			escreva("Tem Hélices? ")
+			escreva("Responda com Sim ou Não")
+			leia(helice)
+			escreva("É movido a ar quente? ")
+			escreva("Responda com Sim ou Não")
+			leia(ar)
+			se ((umaPessoa = "Sim") e (asas = "Não") e (helice = "Não") e (ar = "Não")) então
+				escreva("Então, o transporte escolhido foi o Paraquedas")
+			senao
+				se ((umaPessoa = "Não") e (asas = "Sim") e (helice = "Não") e (ar = "Não")) então
+					escreva("Então, o transporte escolhido foi o Avião")
+				senao
+					se ((umaPessoa = "Não") e (asas = "Não") e (helice = "Sim") e (ar = "Não")) então
+						escreva("Então, o transporte escolhido foi o Helicóptero")
+					senao
+						se ((umaPessoa = "Não") e (asas = "Não") e (helice = "Não") e (ar = "Sim")) então
+							escreva("Então, o transporte escolhido foi o Balão")
+						senao
+							escreva("Escolha um meio de transporte contido na lista.")
+						fimse
+					fimse
+				fimse
+			fimse
+		senão
+			escreva("Esse meio de transporte é aquático? ")
+			escreva("Responda com Sim ou Não")
+			leia(tipo)
+			se (tipo = Sim) então
+				escreva("Fica inteiramente sob a água? ")
+				escreva("Responda com Sim ou Não")
+				leia(sob)
+				escreva("Tem vela? ")
+				escreva("Responda com Sim ou Não")
+				leia(vela)
+				escreva("É usado para cruzeiros? ")
+				escreva("Responda com Sim ou Não")
+				leia(cruzeiro)
+				se ((sob = "Sim") e (vela = "Não") e (cruzeiro = "Não")) então
+					escreva("Então, o transporte escolhido foi o Submarino")
+				senão
+					se ((sob = "Não") e (vela = "Sim") e (cruzeiro = "Não")) então
+						escreva("Então, o transporte escolhido foi o Barco")
+					senão					senao
+						se ((sob = "Não") e (vela = "Não") e (cruzeiro = "Não")) então
+							escreva("Então, o transporte escolhido foi a Lancha")
+						senão 
+							se ((sob = "Não") e (vela = "Não") e (cruzeiro = "Sim")) então
+								escreva("Então, o transporte escolhido foi o Navio")
+							senão
+								escreva("Escolha um meio de transporte contido na lista.")
+							fimse
+						fimse
+					fimse
+				fimse
+			senão
+				escreva("Escolha um meio de transporte contido na lista.")
+			fimse
+		fimse
+	fimse
+
+fimalgoritmo
