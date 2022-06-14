@@ -1,0 +1,103 @@
+Projeto 06
+
+
+algoritmo "Nota do vestibular"
+
+var
+	caractere: nome, turma, turmaMaior
+	real: nota, maior, maiorA, maiorB, maiorC, maiorD
+	inteiro: contador, aprovadosA, aprovadosB, aprovadosC, aprovadosD
+
+inicio
+	indice <- 1
+	contador <- 1
+	alunoMaior <- ""
+	maior <- 0
+	maiorA <- 0
+	maiorB <- 0
+	maiorC <- 0
+	maiorD <- 0
+	aprovadosA <- 0
+	aprovadosB <- 0
+	aprovadosC <- 0
+	aprovadosD <- 0
+
+	// estrutura de repetição
+	para contador ate 100 passo 1 faca
+		se (contador <= 25) então
+			turma <- "A"
+		senao
+			se ((contador > 25) e (contador <= 50)) então
+				turma <- "B"
+			senao
+				se ((contador > 50) e (contador <= 75)) então
+					turma <- "C"
+				senao
+					se ((contador > 75) e (contador <= 100)) então
+						turma <- "D"
+					fimse
+				fimse
+			fimse
+		fimse
+	
+		// turma, nome e nota
+		escreva("Turma: ", turma, "\n")
+		escreva("Nome do aluno: ")
+		leia(nome)
+		escreva("Nota do vestibular do aluno: ")
+		leia(nota)
+
+		// quantidade de aprovados por turma
+		se (nota >= 7) então
+			escreva("Aluno", nome, "aprovado!")
+
+			se (turma = A) então
+				aprovadosA <- aprovadosA + 1
+			senão
+				se (turma = B) então
+					aprovadosB <- aprovadosB + 1
+				senão
+					se (turma = C) então
+						aprovadosC <- aprovadosC + 1
+					senão
+						se (turma = D) então
+							aprovadosD <- aprovadosD + 1
+
+		senão
+			escreva("Aluno", nome, "reprovado")
+
+
+		// maiores notas de cada turma e aluno com maior nota
+		se (nota > maior) então
+			maior <- nota
+			alunoMaior <- nome
+			turmaMaior <- turma
+		fimse
+		se ((nota > maiorA) e (turma = "A")) então
+			maiorA <- nota
+		fimse
+		se ((nota > maiorB) e (turma = "B")) então
+			maiorB <- nota
+		fimse
+		se ((nota > maiorC) e (turma = "C")) então
+			maiorC <- nota
+		fimse
+		se ((nota > maiorD) e (turma = "D")) então
+			maiorD <- nota
+		fimse
+	fimpara
+
+	//quantidade de aprovados por turma
+	escreva(aprovadosA, " alunos da turma A foram aprovados", "\n")
+	escreva(aprovadosB, " alunos da turma B foram aprovados", "\n")
+	escreva(aprovadosC, " alunos da turma C foram aprovados", "\n")
+	escreva(aprovadosD, " alunos da turma D foram aprovados", "\n")
+	
+	//maior nota de cada turma e dados do aluno com melhor desemepenho
+	escreva("Maior nota da turma A: ", maiorA, "\n")
+	escreva("Maior nota da turma B: ", maiorB, "\n")
+	escreva("Maior nota da turma C: ", maiorC, "\n")
+	escreva("Maior nota da turma D: ", maiorD, "\n")
+	escreva(alunoMaior, ", aluno da turma: ", turmaMaior, " obteve a maior nota, pontuando: ", maior)
+
+fimalgoritmo
