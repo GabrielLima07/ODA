@@ -1,0 +1,39 @@
+// Projeto 08
+// Feito em C
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void insertion_sort (int vetor[], int n) {
+    int i, item, ant;
+    for (i = 1; i < n; i++) {
+        item = vetor[i];
+        ant = i - 1;
+        while ((ant >= 0) & (vetor[ant] >item)) {
+            vetor[ant + 1] = vetor[ant];
+            ant = ant - 1;
+        }
+        vetor[ant + 1] = item;
+    }
+
+}
+
+int main() {
+    int v[30] = {
+    11, 7, 87, 23, 45, 67, 31, 1, 3, 5, 53, 3, 21, 77, 35,
+    55, 71, 33, 47, 85, 39, 99, 91, 11, 27, 25, 15, 17, 13, 97
+    };
+    int i;
+
+    printf("Antes de ordenar:\n");
+    for (i = 0;i < 30; i++) {
+        printf("%3d", v[i]);
+    }
+
+    insertion_sort(v, 30);
+
+    printf("\nDepois de ordenar:\n");
+    for (i = 0; i < 30; i++) {
+        printf("%3d", v[i]);
+    }
+}
