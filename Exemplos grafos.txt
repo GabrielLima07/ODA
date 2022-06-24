@@ -1,0 +1,8 @@
+Os grafos são explicitamente utilizados nas redes sociais, na relação entre usuários que seguem e são seguidos por outros.
+Neste caso as pessoas são os vértices e suas relações são as arestas.
+
+Pode-se observar outro exemplo do uso de grafos nas conexões entre vôos, onde os aeroportos são os vértices e suas conexões as arestas.
+
+Em ambos os exemplos podem ser encontrados grafos orientados, não orientados e mistos.
+Observa-se a conexão com a tecnologia no 1º exemplo da forma em que as redes sociais só existem dentro da internet.
+Já no 2º exemplo, temos sistemas que tomam conta e calculam as rotas para que ocorra o maior aproveitamento e menor desperdício de recursos.
