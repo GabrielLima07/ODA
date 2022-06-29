@@ -84,4 +84,4 @@ if __name__ == "__main__":
     f"\n{eleicao.candidato_X.name}: {votos_X}",
     f"\n{eleicao.candidato_Y.name}: {votos_Y}",
     f"\n{eleicao.candidato_Z.name}: {votos_Z}",
-    f"\nNulos: {votos_nulos}")
+    f"\nBrancos e nulos: {votos_nulos}")
