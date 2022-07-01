@@ -1,0 +1,45 @@
+//OBJETOS MATERIAIS
+
+Objeto: Controle_remoto
+    Atributos
+        Cor: Preto
+        Tamanho: 20 cm x 3.5 cm
+        Marca: LG
+    Métodos:
+        Ligar()
+        Acessar_youtube()
+        Aumentar_volume()
+
+Objeto: Smartphone
+    Atributos
+        Cor: Branco
+        Tamanho: 6.43"
+        Ligado: Verdadeiro
+    Métodos:
+        Enviar_mensagem()
+        Fazer_ligação()
+        Acessar_internet()
+
+
+//OBJETOS ABSTRATOS:
+
+Objeto: Chatbot
+    Atributos
+        Ligado: Verdadeiro
+        Empresa: BNN Tech
+        Número_de_telefone: (00) 99191-9191
+    Métodos:
+        Serviços_oferecidos()
+        Preços()
+        Horários_disponíveis()
+
+Objeto: Conta_Corrente
+    Atributos
+        Nome: Fulano
+        CPF: 123.456.789-00
+        Saldo: 500.00
+    Métodos:
+        Transferir()
+        Depositar()
+        Pagar_boleto()
+
