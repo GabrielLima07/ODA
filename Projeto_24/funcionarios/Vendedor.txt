@@ -1,0 +1,23 @@
+package empresa.funcionarios;
+
+public class Vendedor extends Funcionarios {
+
+    int numeroVendas;
+    
+    public Vendedor(String nome, int idade, double salario, String modeloTrabalho) {
+        this.nome = nome;
+        this.idade = idade;
+        this.salario = salario;
+        this.modeloTrabalho = modeloTrabalho;
+        this.numeroVendas = 0;
+    }
+
+    public void vender() {
+        this.numeroVendas += 1;
+    }
+
+    public int getNumeroVendas() {
+        return this.numeroVendas;
+    }
+
+}

@@ -1,0 +1,31 @@
+package empresa.setores;
+
+public class RH extends Setores {
+
+    boolean pagamento;
+
+    public RH(int numeroFuncionarios, int andar){ 
+        this.andar = andar;
+        this.numeroFuncionarios = numeroFuncionarios;
+        this.horarioFuncionamento = "8:00 AM - 17:00 PM";
+        this.pagamento = false;
+    } 
+
+    public void pagarFuncionarios() {
+        this.pagamento = true;
+    }
+
+    public boolean getPagamento() {
+        return this.pagamento;
+    }
+
+    public String situacaoPagamento() {
+        if (this.getPagamento() == false) {
+            return "Os pagamentos estão pendentes.";
+        }
+        else {
+            return "Os pagamentos foram feitos.";
+        }
+    }
+    
+}

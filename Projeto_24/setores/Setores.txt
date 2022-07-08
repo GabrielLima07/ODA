@@ -1,0 +1,8 @@
+package empresa.setores;
+
+abstract public class Setores {
+
+    int andar, numeroFuncionarios;
+    String horarioFuncionamento;
+
+}

@@ -1,0 +1,26 @@
+package empresa.funcionarios;
+
+public class Recrutador extends Funcionarios{
+
+    int recrutadosBimestre;
+
+    public Recrutador(String nome, int idade, double salario, String modeloTrabalho) {
+        this.nome = nome;
+        this.idade = idade;
+        this.salario = salario;
+        this.modeloTrabalho = modeloTrabalho;
+        this.recrutadosBimestre = 0;
+    }
+    public void recrutar() {
+        this.recrutadosBimestre += 1;
+    }
+
+    public void demitir() {
+        this.recrutadosBimestre -= 1;
+    }
+
+    public int getRecrutadosBimestre() {
+        return this.recrutadosBimestre;
+    }
+    
+}

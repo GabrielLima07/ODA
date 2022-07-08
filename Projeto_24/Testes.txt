@@ -1,0 +1,39 @@
+// Projeto 24
+
+import empresa.funcionarios.Recrutador;
+import empresa.funcionarios.Vendedor;
+import empresa.setores.RH;
+import empresa.setores.Vendas;
+
+public class Testes {
+
+    public static void main(String[] args){
+
+        Vendas vendas = new Vendas(60, 1);
+        RH recursosHumanos = new RH(15, 5);
+        Vendedor ven576 = new Vendedor("João", 21, 2513.21, "Home Office");
+        Recrutador rec73 = new Recrutador("Saulo", 37, 4575.83, "Híbrido");
+
+        System.out.println("Testes classe Vendas:");
+        vendas.setMetaMes(52713.76);
+        System.out.println("Meta do mês: R$" + vendas.getMetaMes() + "\n");
+
+        System.out.println("Testes classe RH:");
+        System.out.println(recursosHumanos.getPagamento());
+        recursosHumanos.pagarFuncionarios();
+        System.out.println(recursosHumanos.situacaoPagamento() + "\n");
+
+        System.out.println("Testes classe Vendedor:");
+        ven576.vender();
+        ven576.vender();
+        System.out.println("Total de vendas de " + ven576.getNome() + ": " + ven576.getNumeroVendas() + "\n");
+
+        System.out.println("Testes classe Recrutador:");
+        rec73.recrutar();
+        rec73.recrutar();
+        rec73.demitir();
+        System.out.println("Número de recrutados por " + rec73.getNome() + ": " + rec73.getRecrutadosBimestre());
+        
+    }
+
+}

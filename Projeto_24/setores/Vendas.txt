@@ -1,0 +1,25 @@
+package empresa.setores;
+
+public class Vendas extends Setores{
+
+    int totalProdutosVendidos;
+    double metaMes;
+
+    public Vendas(int numeroFuncionarios, int andar) {
+        this.andar = andar;
+        this.numeroFuncionarios = numeroFuncionarios;
+        this.horarioFuncionamento = "8:00 AM - 17:00 PM";
+        this.totalProdutosVendidos = 0;
+        this.metaMes = 0;
+    }
+
+    public double getMetaMes() {
+        return this.metaMes;
+    }
+
+    public void setMetaMes(double novaMeta) {
+        this.metaMes = novaMeta;
+    }
+
+
+}

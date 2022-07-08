@@ -1,0 +1,17 @@
+package empresa.funcionarios;
+
+abstract public class Funcionarios {
+    
+    String nome, modeloTrabalho;
+    int idade;
+    double salario;
+
+    public void setModeloTrabalho(String novoModelo) {
+        this.modeloTrabalho = novoModelo;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+}
