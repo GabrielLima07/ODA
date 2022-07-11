@@ -1,0 +1,25 @@
+﻿Projeto 28
+-Padrões de projetos-
+
+Observer
+
+O observer está classificado como um padrão comportamental, ou seja, enquadra-se como um padrão onde ocorre a comunicação entre classes. 
+Ele funciona como uma assinatura, onde há a relação de dependência entre objetos: o observable e os observers.
+Sempre que há uma mudança de estado no observable, todos os observers, seus dependentes, serão notificados e atualizados.
+
+Os observables têm meios de adicionar, remover e notificar todos seus observers quando acontece a mudança de estado.
+Os observers obrigatoriamente devem ter meios de receber a notificação de mudança de estado.
+
+
+Alguns exemplos são: 
+1. Uma linha de transmissão no Whatsapp onde sempre em que uma nova mensagem é enviada dentro da linha,as pessoas dentro dela,
+uma a uma, recebem a mensagem. Aqui temos a linha como observable e os nela contidos como observers.
+
+
+2. No Youtube, quando é feita a inscrição e ativa-se o sininho, o canal inscrito passa a receber a notificação dos novos vídeos do canal
+em que se inscreveu. Neste exemplo o canal em que se foi feita a inscrição é o observable e os nele inscritos são os observers.
+
+
+3. Em uma Newsletter via Gmail, onde feita a inscrição você receberá novos emails da mesma, havendo também a possibilidade
+de cancelar a inscrição, assim como nos outros exemplos. No cenário em questão a Newsletter é o observable
+e os endereços de Gmail que a assinam são os observers.
